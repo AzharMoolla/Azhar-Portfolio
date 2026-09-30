@@ -908,3 +908,47 @@ a:hover { color: var(--accent-dark); }
     margin-top: 0;
   }
 }
+
+/* ===== Audience views (?view=planning | analyst | builder) ===== */
+main { display: flex; flex-direction: column; }
+main > .section, main > .hero { width: 100%; }
+.hero { order: -1; }
+.nav-links { flex-wrap: nowrap; }
+
+.view-switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: -12px 0 32px;
+}
+.view-switch-label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin-right: 4px;
+}
+.view-switch button {
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.view-switch button:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+.view-switch button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.view-switch button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+.nav-links a.is-current:not(.nav-cta) { color: #fff; background-size: 100% 1.5px; }
+section[id] { scroll-margin-top: calc(var(--nav-h) + 8px); }

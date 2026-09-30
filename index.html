@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Azhar Moolla — Portfolio</title>
-  <meta name="description" content="A look at my work — urban planning, real estate finance, data analysis, marketing, and a handful of web projects I've built along the way.">
+  <meta name="description" content="Azhar Moolla — urban planner and real estate analyst: development feasibility and pro forma modelling, GIS and spatial analysis, economic development, and live web products built from scratch.">
   <meta property="og:title" content="Azhar Moolla — Portfolio">
-  <meta property="og:description" content="A look at my work — urban planning, real estate finance, data analysis, marketing, and a handful of web projects I've built along the way.">
-  <meta property="og:image" content="assets/img/wasfirst-home.png">
+  <meta property="og:description" content="Azhar Moolla — urban planner and real estate analyst: development feasibility and pro forma modelling, GIS and spatial analysis, economic development, and live web products built from scratch.">
+  <meta property="og:image" content="assets/img/worksample-p4.png">
+  <meta name="theme-color" content="#101522">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101522'/%3E%3Ctext x='30' y='44' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3Ccircle cx='48' cy='44' r='5' fill='%232563eb'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Azhar Moolla","email":"mailto:Azharmoolla@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Oshawa","addressRegion":"ON","addressCountry":"CA"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Toronto Metropolitan University"},{"@type":"CollegeOrUniversity","name":"Durham College"}],"knowsAbout":["Urban planning","Real estate development feasibility","Financial modelling","GIS","Economic development"],"sameAs":["https://github.com/AzharMoolla"]}</script>
 </head>
 <body>
 
@@ -26,11 +28,11 @@
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
       <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#analyst-work">Analyst Work</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Toolkit</a></li>
-        <li><a class="nav-cta" href="#contact">Contact</a></li>
+        <li data-nav="analyst-work"><a href="#analyst-work">Work</a></li>
+        <li data-nav="experience"><a href="#experience">Experience</a></li>
+        <li data-nav="projects"><a href="#projects">Projects</a></li>
+        <li data-nav="skills"><a href="#skills">Toolkit</a></li>
+        <li data-nav="contact"><a class="nav-cta" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -42,13 +44,23 @@
       <div class="container hero-inner">
         <p class="hero-kicker reveal">Oshawa, Ontario · Open to relocation</p>
         <h1 class="hero-title reveal">Azhar Moolla<span class="title-dot">.</span></h1>
-        <p class="hero-sub reveal">I work the whole stack of a problem — financial feasibility, urban planning, economic development, data analysis, marketing — and <em>when the right tool doesn't exist, I build it</em>. The products below started exactly that way.</p>
+        <p class="hero-sub reveal" id="hero-sub">Urban planner with municipal, consulting, and economic-development experience — development review, GIS spatial analysis, urban design, and the financial feasibility that decides whether a plan gets built. And when the right tool doesn't exist, <em>I build it</em>.</p>
         <div class="hero-actions reveal">
-          <a class="btn btn-primary" href="#projects">
-            See the live projects
+          <a class="btn btn-primary" id="hero-cta" href="#analyst-work">
+            <span>See the planning work</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
           <a class="btn btn-ghost" href="mailto:Azharmoolla@gmail.com">Get in touch</a>
+          <a class="btn btn-ghost" id="hero-doc" href="assets/docs/Azhar_Moolla_CV.pdf" download>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download CV (PDF)</span>
+          </a>
+        </div>
+        <div class="view-switch reveal" role="group" aria-label="Choose what to see first">
+          <span class="view-switch-label">Lead with:</span>
+          <button type="button" data-view="planning">Planning</button>
+          <button type="button" data-view="analyst">Analysis &amp; finance</button>
+          <button type="button" data-view="builder">Products I've built</button>
         </div>
         <ul class="hero-meta reveal">
           <li>
@@ -66,11 +78,106 @@
         </ul>
       </div>
       <div class="hero-stats">
-        <div class="container stats-grid">
-          <div class="stat reveal"><span class="stat-num" data-value="5">5</span><span class="stat-label">Web products shipped</span></div>
-          <div class="stat reveal"><span class="stat-num" data-prefix="$" data-value="1.2" data-decimals="1" data-suffix="B">$1.2B</span><span class="stat-label">Development pro forma modeled</span></div>
-          <div class="stat reveal"><span class="stat-num" data-prefix="$" data-value="0" data-suffix="/mo">$0/mo</span><span class="stat-label">Infra cost of Home Finder</span></div>
+        <div class="container stats-grid" id="hero-stats">
+          <div class="stat reveal"><span class="stat-num" data-value="4">4</span><span class="stat-label">Planning &amp; consulting placements</span></div>
+          <div class="stat reveal"><span class="stat-num" data-prefix="$" data-value="1.2" data-decimals="1" data-suffix="B">$1.2B</span><span class="stat-label">Development pro forma modelled</span></div>
           <div class="stat reveal"><span class="stat-num" data-value="1">1</span><span class="stat-label">Emilio Dio Award for Studio Excellence</span></div>
+          <div class="stat reveal"><span class="stat-num" data-value="5">5</span><span class="stat-label">Web products shipped</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ANALYST WORK ===== -->
+    <section id="analyst-work" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker reveal">Selected Work</p>
+        <h2 class="section-title reveal">Planning, spatial analysis, and feasibility — the work behind the decisions.</h2>
+        <p class="section-sub reveal">Selected pages from my consulting and studio work — including the CreateTO financial feasibility study that won the Emilio Dio Award for Studio Excellence. Click any image to enlarge.</p>
+        <div class="gallery">
+          <figure class="gallery-item reveal" data-o-planning="6" data-o-analyst="1">
+            <button class="gallery-btn" data-full="assets/img/worksample-p4.png" aria-label="Enlarge: pro forma scenario testing">
+              <img src="assets/img/worksample-p4.png" alt="Pro forma scenario testing table comparing four development scenarios by NPV and IRR" loading="lazy">
+            </button>
+            <figcaption><strong>Pro forma scenario testing</strong> — four development scenarios stress-tested on unit count, affordability ratio, and construction duration; outputs in 6% NPV and IRR-10. (CreateTO)</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-o-planning="5" data-o-analyst="2">
+            <button class="gallery-btn" data-full="assets/img/worksample-p3.png" aria-label="Enlarge: development cost breakdown">
+              <img src="assets/img/worksample-p3.png" alt="Development cost summary: hard costs, soft costs, contingency, remediation, totalling $1.24B" loading="lazy">
+            </button>
+            <figcaption><strong>Development budget</strong> — $1.24B total cost build-up across hard costs, soft costs, contingency, and land remediation for 2.07M ft² GFA. (CreateTO)</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-o-planning="4" data-o-analyst="3">
+            <button class="gallery-btn" data-full="assets/img/worksample-p6.png" aria-label="Enlarge: construction phasing">
+              <img src="assets/img/worksample-p6.png" alt="Construction phasing table across three phases with GFA and cost per phase" loading="lazy">
+            </button>
+            <figcaption><strong>Construction phasing</strong> — three-phase delivery plan with per-phase GFA, community space, and cost-per-square-foot tracking. (CreateTO)</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-o-planning="2" data-o-analyst="5">
+            <button class="gallery-btn" data-full="assets/img/worksample-p1.png" aria-label="Enlarge: housing needs maps">
+              <img src="assets/img/worksample-p1.png" alt="Choropleth maps of Toronto showing condo sales and rental lease rates by district" loading="lazy">
+            </button>
+            <figcaption><strong>Housing needs snapshot</strong> — GIS choropleths of condo absorption and rental lease rates across Toronto districts.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-o-planning="3" data-o-analyst="4">
+            <button class="gallery-btn" data-full="assets/img/worksample-p2.png" aria-label="Enlarge: rent trend analysis">
+              <img src="assets/img/worksample-p2.png" alt="Line chart of average rent by unit type 2023–2025 with market findings" loading="lazy">
+            </button>
+            <figcaption><strong>Rent trend analysis</strong> — average rent by unit type, 2023–2025, with absorption and vacancy findings driving the unit-mix recommendation.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-o-planning="1" data-o-analyst="6">
+            <button class="gallery-btn" data-full="assets/img/worksample-p11.png" aria-label="Enlarge: urban design isometric">
+              <img src="assets/img/worksample-p11.png" alt="Axonometric drawing of a densification development strategy with sections" loading="lazy">
+            </button>
+            <figcaption><strong>Urban design strategy</strong> — axonometric and sectional drawings for a gentle-densification housing strategy in Ajax, Ontario.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-kicker reveal">Experience</p>
+        <h2 class="section-title reveal">Four placements, four sides of how cities get built and financed.</h2>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-when">Sep – Dec 2025</div>
+            <div class="timeline-card">
+              <h3>CreateTO <span>· Student Consultant — Financial Feasibility Lead</span></h3>
+              <p>Led the financial feasibility workstream on a major Toronto development study. Built and stress-tested the Excel pro forma, ran sensitivity analysis on revenue, cost, and density assumptions, and produced the comparative outputs that drove the team's recommendation. Recipient of the <strong>Emilio Dio Award for Studio Excellence</strong>.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when">Sep – Dec 2025</div>
+            <div class="timeline-card">
+              <h3>Municipality of Clarington <span>· Parks Planning Student</span></h3>
+              <p>Reviewed development and land-use documentation for compliance, coordinated revisions in AutoCAD and Excel, and performed GIS-based spatial review to verify site constraints — speeding up approval processing.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when">Apr – Aug 2025</div>
+            <div class="timeline-card">
+              <h3>Regional Municipality of Durham <span>· Economic Development Intern</span></h3>
+              <p>Collected, cleaned, and structured business and property datasets in Excel and ArcGIS — including work on the Durham Region Business Count — and built summary reports and dashboards for market assessments, benchmarking, and investment-attraction analysis.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when">Jan – Apr 2025</div>
+            <div class="timeline-card">
+              <h3>York University Development Corporation <span>· Student Consultant — Urban Planning & Design</span></h3>
+              <p>Consolidated multi-disciplinary inputs into client-facing reports and visual summaries; prepared presentation decks and executive briefings that helped secure stakeholder approval for concept development.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="edu reveal">
+          <div class="edu-item">
+            <h4>Toronto Metropolitan University</h4>
+            <p>Bachelor of Urban &amp; Regional Planning · Sep 2022 – Jun 2026 · graduated with distinction · Emilio Dio Award for Studio Excellence</p>
+          </div>
+          <div class="edu-item">
+            <h4>Durham College</h4>
+            <p>Diploma, Business Marketing · Jan 2020 – Apr 2021 · graduated with honours</p>
+          </div>
         </div>
       </div>
     </section>
@@ -78,8 +185,8 @@
     <!-- ===== PROJECTS ===== -->
     <section id="projects" class="section">
       <div class="container">
-        <p class="section-kicker reveal">01 · Featured Projects</p>
-        <h2 class="section-title reveal">Things I've built and shipped — the live ones first.</h2>
+        <p class="section-kicker reveal">Products &amp; Projects</p>
+        <h2 class="section-title reveal">Things I've designed, built, and shipped.</h2>
         <p class="section-sub reveal">One is a real-time multiplayer app with a clever fix for network latency. One turns real-estate domain knowledge into a marketplace. One proves a useful tool can cost nothing to run. Software is just the medium — the skill on display is taking something from concept to shipped, which travels to any field.</p>
 
         <!-- DubDubDone -->
@@ -194,105 +301,10 @@
       </div>
     </section>
 
-    <!-- ===== ANALYST WORK ===== -->
-    <section id="analyst-work" class="section section-alt">
-      <div class="container">
-        <p class="section-kicker reveal">02 · Analyst Work</p>
-        <h2 class="section-title reveal">The numbers side: pro formas, scenario testing, and spatial analysis.</h2>
-        <p class="section-sub reveal">Selected pages from my consulting and studio work — including the CreateTO financial feasibility study that won the Emilio Dio Award for Studio Excellence. Click any image to enlarge.</p>
-        <div class="gallery">
-          <figure class="gallery-item reveal">
-            <button class="gallery-btn" data-full="assets/img/worksample-p4.png" aria-label="Enlarge: pro forma scenario testing">
-              <img src="assets/img/worksample-p4.png" alt="Pro forma scenario testing table comparing four development scenarios by NPV and IRR" loading="lazy">
-            </button>
-            <figcaption><strong>Pro forma scenario testing</strong> — four development scenarios stress-tested on unit count, affordability ratio, and construction duration; outputs in 6% NPV and IRR-10. (CreateTO)</figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <button class="gallery-btn" data-full="assets/img/worksample-p3.png" aria-label="Enlarge: development cost breakdown">
-              <img src="assets/img/worksample-p3.png" alt="Development cost summary: hard costs, soft costs, contingency, remediation, totalling $1.24B" loading="lazy">
-            </button>
-            <figcaption><strong>Development budget</strong> — $1.24B total cost build-up across hard costs, soft costs, contingency, and land remediation for 2.07M ft² GFA. (CreateTO)</figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <button class="gallery-btn" data-full="assets/img/worksample-p6.png" aria-label="Enlarge: construction phasing">
-              <img src="assets/img/worksample-p6.png" alt="Construction phasing table across three phases with GFA and cost per phase" loading="lazy">
-            </button>
-            <figcaption><strong>Construction phasing</strong> — three-phase delivery plan with per-phase GFA, community space, and cost-per-square-foot tracking. (CreateTO)</figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <button class="gallery-btn" data-full="assets/img/worksample-p1.png" aria-label="Enlarge: housing needs maps">
-              <img src="assets/img/worksample-p1.png" alt="Choropleth maps of Toronto showing condo sales and rental lease rates by district" loading="lazy">
-            </button>
-            <figcaption><strong>Housing needs snapshot</strong> — GIS choropleths of condo absorption and rental lease rates across Toronto districts.</figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <button class="gallery-btn" data-full="assets/img/worksample-p2.png" aria-label="Enlarge: rent trend analysis">
-              <img src="assets/img/worksample-p2.png" alt="Line chart of average rent by unit type 2023–2025 with market findings" loading="lazy">
-            </button>
-            <figcaption><strong>Rent trend analysis</strong> — average rent by unit type, 2023–2025, with absorption and vacancy findings driving the unit-mix recommendation.</figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <button class="gallery-btn" data-full="assets/img/worksample-p11.png" aria-label="Enlarge: urban design isometric">
-              <img src="assets/img/worksample-p11.png" alt="Axonometric drawing of a densification development strategy with sections" loading="lazy">
-            </button>
-            <figcaption><strong>Urban design strategy</strong> — axonometric and sectional drawings for a gentle-densification housing strategy in Ajax, Ontario.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== EXPERIENCE ===== -->
-    <section id="experience" class="section">
-      <div class="container">
-        <p class="section-kicker reveal">03 · Experience</p>
-        <h2 class="section-title reveal">Four placements, four sides of how cities get built and financed.</h2>
-        <ol class="timeline">
-          <li class="timeline-item reveal">
-            <div class="timeline-when">Sep – Dec 2025</div>
-            <div class="timeline-card">
-              <h3>CreateTO <span>· Student Consultant — Financial Feasibility Lead</span></h3>
-              <p>Led the financial feasibility workstream on a major Toronto development study. Built and stress-tested the Excel pro forma, ran sensitivity analysis on revenue, cost, and density assumptions, and produced the comparative outputs that drove the team's recommendation. Recipient of the <strong>Emilio Dio Award for Studio Excellence</strong>.</p>
-            </div>
-          </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-when">Sep – Dec 2025</div>
-            <div class="timeline-card">
-              <h3>Municipality of Clarington <span>· Parks Planning Student</span></h3>
-              <p>Reviewed development and land-use documentation for compliance, coordinated revisions in AutoCAD and Excel, and performed GIS-based spatial review to verify site constraints — speeding up approval processing.</p>
-            </div>
-          </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-when">Apr – Aug 2025</div>
-            <div class="timeline-card">
-              <h3>Regional Municipality of Durham <span>· Economic Development Intern</span></h3>
-              <p>Collected, cleaned, and structured business and property datasets in Excel and ArcGIS; built summary reports and dashboards for market assessments, benchmarking, and investment-attraction analysis.</p>
-            </div>
-          </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-when">Jan – Apr 2025</div>
-            <div class="timeline-card">
-              <h3>York University Development Corporation <span>· Student Consultant — Urban Planning & Design</span></h3>
-              <p>Consolidated multi-disciplinary inputs into client-facing reports and visual summaries; prepared presentation decks and executive briefings that helped secure stakeholder approval for concept development.</p>
-            </div>
-          </li>
-        </ol>
-        <div class="edu reveal">
-          <div class="edu-item">
-            <h4>Toronto Metropolitan University</h4>
-            <p>B. Urban &amp; Regional Planning · 2022 – present</p>
-          </div>
-          <div class="edu-item">
-            <h4>Durham College</h4>
-            <p>Diploma, Business Marketing · graduated with honors</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ===== SKILLS ===== -->
     <section id="skills" class="section section-alt">
       <div class="container">
-        <p class="section-kicker reveal">04 · Toolkit</p>
+        <p class="section-kicker reveal">Toolkit</p>
         <h2 class="section-title reveal">Finance, planning, data, design, code — one connected toolkit.</h2>
         <div class="skills-grid">
           <div class="skill-card reveal">
@@ -344,8 +356,8 @@
             <li>Real estate &amp; financial analysis</li>
             <li>Economic development</li>
             <li>Data analysis &amp; reporting</li>
-            <li>Marketing &amp; market research</li>
-            <li>Web &amp; AI development</li>
+            <li>Market research</li>
+            <li>Web &amp; AI product development</li>
             <li>Startup generalist</li>
           </ul>
         </div>
@@ -355,7 +367,7 @@
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="section contact">
       <div class="container contact-inner">
-        <p class="section-kicker reveal">05 · Contact</p>
+        <p class="section-kicker reveal">Contact</p>
         <h2 class="section-title reveal">Let's talk.</h2>
         <p class="section-sub reveal">Based in Oshawa, Ontario — open to relocation, and to roles across planning, finance, analysis, marketing, development, and early-stage startups. If the work is interesting, I'm interested.</p>
         <div class="contact-actions reveal">
@@ -364,6 +376,8 @@
             Azharmoolla@gmail.com
           </a>
           <a class="btn btn-ghost btn-lg" href="tel:+12899872588">+1 289-987-2588</a>
+          <a class="btn btn-ghost btn-lg" href="assets/docs/Azhar_Moolla_Resume.pdf" download>Résumé (PDF)</a>
+          <a class="btn btn-ghost btn-lg" href="assets/docs/Azhar_Moolla_CV.pdf" download>CV (PDF)</a>
           <a class="btn btn-ghost btn-lg" href="https://github.com/AzharMoolla" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
