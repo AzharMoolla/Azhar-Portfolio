@@ -15,21 +15,21 @@ const VIEWS = {
     sub: "Urban planner with municipal, consulting, and economic-development experience — development review, GIS spatial analysis, urban design, and the financial feasibility that decides whether a plan gets built. And when the right tool doesn't exist, <em>I build it</em>.",
     cta: ["See the planning work", "#analyst-work"],
     doc: ["Download CV (PDF)", "assets/docs/Azhar_Moolla_CV.pdf"],
-    stats: [["4", "Planning & consulting placements"], ["$1.2B", "Development pro forma modelled"], ["1", "Emilio Dio Award for Studio Excellence"], ["5", "Web products shipped"]],
+    stats: [["4", "Planning & consulting placements"], ["$1.2B", "Development pro forma modelled"], ["1", "Emilio Dio Award for Studio Excellence"], ["6", "Web products shipped"]],
   },
   analyst: {
     order: ["analyst-work", "experience", "projects", "skills"],
     sub: "Real estate analyst who builds and stress-tests development pro formas — scenario and sensitivity testing, phasing, NPV and IRR, and clear recommendations for stakeholders. Grounded in urban planning, and when the right tool doesn't exist, <em>I build it</em>.",
     cta: ["See the pro forma work", "#analyst-work"],
     doc: ["Download résumé (PDF)", "assets/docs/Azhar_Moolla_Resume.pdf"],
-    stats: [["$1.2B", "Development pro forma modelled"], ["4", "Development scenarios stress-tested"], ["1", "Emilio Dio Award for Studio Excellence"], ["5", "Web products shipped"]],
+    stats: [["$1.2B", "Development pro forma modelled"], ["4", "Development scenarios stress-tested"], ["1", "Emilio Dio Award for Studio Excellence"], ["6", "Web products shipped"]],
   },
   builder: {
     order: ["projects", "analyst-work", "experience", "skills"],
     sub: "I work the whole stack of a problem — financial feasibility, urban planning, economic development, data analysis, marketing — and <em>when the right tool doesn't exist, I build it</em>. The products below started exactly that way.",
     cta: ["See the live projects", "#projects"],
     doc: ["Download résumé (PDF)", "assets/docs/Azhar_Moolla_Resume.pdf"],
-    stats: [["5", "Web products shipped"], ["$0/mo", "Infra cost of Home Finder"], ["$1.2B", "Development pro forma modelled"], ["1", "Emilio Dio Award for Studio Excellence"]],
+    stats: [["6", "Web products shipped"], ["$0/mo", "Infra cost of Home Finder"], ["$1.2B", "Development pro forma modelled"], ["1", "Emilio Dio Award for Studio Excellence"]],
   },
 };
 

@@ -463,6 +463,10 @@ a:hover { color: var(--accent-dark); }
 
 .project-links { display: flex; flex-wrap: wrap; gap: 12px; }
 
+/* non-linked project media (e.g. a local research project with no public URL) */
+.project-media--static { cursor: default; }
+.project-note { font-size: 0.9rem; color: var(--ink-mute); font-weight: 500; }
+
 /* ===== Archive ===== */
 .archive {
   margin-top: 72px;
